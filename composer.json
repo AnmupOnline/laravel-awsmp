@@ -1,0 +1,34 @@
+{
+    "name": "anmup/laravel-awsmp",
+    "description": "AWS Marketplace SAAS Integration for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saurav Giri",
+            "email": "realanmup@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anmup\\LaravelAwsMp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anmup\\LaravelAwsMp\\AwsMpServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAwsMp": "Anmup\\LaravelAwsMp\\AwsMpFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
